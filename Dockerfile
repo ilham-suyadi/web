@@ -1,3 +1,5 @@
 FROM nginx:alpine
 
-COPY web /usr/share/nginx/html
+RUN mkdir /app
+
+COPY . /app
